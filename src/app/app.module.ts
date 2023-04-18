@@ -1,14 +1,21 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
+import { BasicHighlightDirective } from './basicHighlight/basicHighlight.directive';
+import { BetterHighlightDirective } from './betterHighlight/better-highlight.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
